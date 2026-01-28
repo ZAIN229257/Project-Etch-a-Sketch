@@ -1,6 +1,9 @@
 const sqoer = {x:4,y:5};
 const container = document.querySelector(".grid");
 
+function randomColor() {
+  return `rgb(${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)})`;
+}
 
 
 
@@ -30,17 +33,16 @@ function createGrid(){
 
    coler.forEach(coler => {
    coler.addEventListener("mouseover", e =>{
-    e.target.style.backgroundColor = "black";
+    e.target.style.backgroundColor = randomColor();
    });
    coler.addEventListener("mouseout", e => {
-    e.target.style.backgroundColor = "red"; 
+    e.target.style.backgroundColor = randomColor(); 
     });
-    });
 
 
-
-
-  }
+  });
+  };
+   
 };
 
 const button = document.querySelector(".bb");
