@@ -1,0 +1,37 @@
+body{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+  flex-direction: column;
+  gap: 10PX;
+
+}
+.qq{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ width: 40%; 
+
+}
+.grid{
+    border: 1px solid black;
+   width: 400px;
+   height: 400px;
+   padding:  1px;
+   padding-bottom: 3px;
+   padding-right: 3px;
+ 
+   
+   
+   
+}
+.ssquare {
+    
+  border: 1px solid black;
+  
+  list-style: none;
+  
+}
+
+   
+
